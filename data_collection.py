@@ -133,7 +133,7 @@ global_data = torch.tensor(global_data, dtype=torch.float)
 
 global_data[0].shape
 
-odel = GNN.GNN(nodefeats=13, edgefeats=2, ndim=128, edim=64, globfeats=7, num_layers=5)
+model = GNN.GNN(nodefeats=13, edgefeats=2, ndim=128, edim=64, globfeats=7, num_layers=5)
 optimizer = torch.optim.Adam(model.parameters(), lr = 0.0003)
 epochs = 20
 losses = []
